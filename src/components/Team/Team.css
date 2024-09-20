@@ -1,0 +1,36 @@
+.team {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  .github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #42279D; /* Cor azul do projeto */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #42279D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .github-link:hover {
+    background-color: #42279D;
+    color: #fff;
+  }

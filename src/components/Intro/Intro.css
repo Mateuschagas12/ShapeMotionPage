@@ -1,0 +1,38 @@
+.intro {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #FFDA00;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    color: #42279D;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .intro .images {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+ .intro img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 50px;
+ }
+  
+  .intro img:first-child {
+    width: 400px; /
+  }
+  
+  .intro img:last-child {
+    width: 250px;
+  }

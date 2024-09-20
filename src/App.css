@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  color: #333;
+  background-color: #FFDA00;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.header {
+  background-color: #42279D; 
+  padding: 1px 0; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  transition: all 0.3s ease;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header nav ul li {
+  flex: 1; 
+  text-align: center; 
+  border: 2px solid #FFDA00; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.header nav ul li:hover {
+  background-color: rgba(255, 215, 0, 0.3);
+  transform: scale(1.05); 
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem; 
+  padding: 8px; 
+  display: block; 
+}
+
+
+.hero {
+  height: 100vh;
+  background: #FFDA00;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #42279D; 
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.hero iframe {
+  width: 80%;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about {
+  padding: 80px 20px;
+  background-color: #FFDA00;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #42279D; 
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.team {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  color: #42279D; /* Novo tom de azul */
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #FFDA00;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  color: #42279D; /* Novo tom de azul */
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.footer {
+  background-color: #42279D; /* Novo tom de azul */
+  color: #FFDA00;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #FFDA00;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  border: 2px solid #FFDA00; 
+  border-radius: 10px; 
+  padding: 5px 10px; 
+}
+
+.footer a:hover {
+  background-color: rgba(255, 215, 0, 0.3); 
+  color: #fff; 
+}

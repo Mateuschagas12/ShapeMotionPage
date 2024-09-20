@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    max-width: 150px;
+  }
+  
+  nav ul {
+    color: #fff;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: bold;
+  }
+  
