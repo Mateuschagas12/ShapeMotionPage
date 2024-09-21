@@ -5,6 +5,19 @@
   scroll-behavior: smooth; 
 }
 
+section {
+  padding: 80px 20px;
+}
+
+.about, .team, .footer {
+  text-align: center;
+  padding: 100px 20px; 
+}
+
+.about p, .team p {
+  font-size: 1.1rem;
+  line-height: 1.7; 
+}
 
 body {
   font-family: 'Montserrat', sans-serif; 
@@ -34,6 +47,7 @@ html {
   justify-content: space-around; 
   align-items: center; 
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .header nav ul {
@@ -157,6 +171,7 @@ html {
   color: #FFDA00;
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .footer p {
@@ -225,79 +240,59 @@ html {
 }
 
 /* Ajuste para telas menores que 768px (smartphones) */
+/* Ajuste para header e footer em telas menores que 768px */
 @media (max-width: 768px) {
-  .header nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .header nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero {
-    height: auto;
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-  }
-
-  .hero iframe {
-    height: 300px;
-  }
-
-  .about, .team, .intro {
-    padding: 40px 20px;
-  }
-
-  .about h2, .team h2 {
-    font-size: 2rem;
-  }
-
-  .about p, .team-member p {
-    font-size: 1rem;
-  }
-
-  .team-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .team-member {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .intro img {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .btn-repositorio {
-    padding: 8px 15px;
-    font-size: 1rem;
-  }
-
-  .footer {
-    padding: 15px;
-  }
-
+  .header nav ul,
   .footer nav ul {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row; /* Mantenha os itens lado a lado */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .header nav ul li,
+  .footer nav ul li {
+    flex: 1 1 auto; /* Flexibilidade para os itens se ajustarem ao espaço */
+    width: auto; /* Permite que os itens se ajustem automaticamente */
+    margin: 0 10px; /* Espaço entre os itens */
+  }
+}
+
+/* Ajuste para as imagens da seção intro em telas menores que 768px */
+@media (max-width: 768px) {
+  .intro img {
+    width: 100%; /* Assegura que as imagens ocupem 100% da largura disponível */
+    max-width: none; /* Remove o limite de largura */
+    margin: 20px 0; /* Adiciona espaço entre as imagens */
+    display: block; /* Garante que as imagens fiquem uma embaixo da outra */
   }
 }
 
 /* Ajuste para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 700px) {
+  .header nav ul {
+    flex-direction: row; /* Mantenha lado a lado */
+    justify-content: space-around; /* Alinhe os itens */
+  }
+
+  .intro .images {
+    flex-direction: column; /* Coloque as imagens em coluna */
+    align-items: center; /* Centralize as imagens */
+  }
+
+  .intro img {
+    width: 100%; /* Para que a imagem ocupe toda a largura */
+    max-width: 300px; /* Defina um tamanho máximo */
+    margin: 20px 0; /* Espaçamento entre as imagens */
+  }
+}
+
+/* Ajustes para telas menores que 480px */
 @media (max-width: 480px) {
+  .header, .footer {
+    width: 100%;
+    padding: 10px; /* Ajuste a altura se necessário */
+  }
+
   .hero h1 {
     font-size: 2rem;
   }

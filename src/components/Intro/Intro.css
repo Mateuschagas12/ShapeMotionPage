@@ -36,3 +36,11 @@
   .intro img:last-child {
     width: 250px;
   }
+
+  .intro img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .intro img:hover {
+    transform: scale(1.05); 
+  }
