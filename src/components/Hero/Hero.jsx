@@ -5,14 +5,10 @@ const Hero = () => {
   return (
     <section id="hero" className="hero">
       <h2>Pitch do Projeto</h2>
-      <div className="video-container">
-        <iframe
-          src="https://www.youtube.com/watch?v=WZmkbPxgDFQ" 
-          title="Vídeo do Pitch"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <div className="video-thumbnail">
+        <a href="https://www.youtube.com/watch?v=WZmkbPxgDFQ" target='_blank' rel='noopener noreferrer'>
+        <img src="https://img.youtube.com/vi/WZmkbPxgDFQ/maxresdefault.jpg" alt="Assista ao vídeo do projeto" />
+        </a>
       </div>
     </section>
   );
