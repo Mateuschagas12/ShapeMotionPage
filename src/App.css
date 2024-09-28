@@ -260,29 +260,29 @@ html {
 /* Ajuste para as imagens da seção intro em telas menores que 768px */
 @media (max-width: 768px) {
   .intro img {
-    width: 100%; /* Assegura que as imagens ocupem 100% da largura disponível */
-    max-width: none; /* Remove o limite de largura */
-    margin: 20px 0; /* Adiciona espaço entre as imagens */
-    display: block; /* Garante que as imagens fiquem uma embaixo da outra */
+    width: 100%; 
+    max-width: none; 
+    margin: 20px 0;
+    display: block; 
   }
 }
 
 /* Ajuste para telas menores que 480px (smartphones pequenos) */
 @media (max-width: 700px) {
   .header nav ul {
-    flex-direction: row; /* Mantenha lado a lado */
-    justify-content: space-around; /* Alinhe os itens */
+    flex-direction: row; 
+    justify-content: space-around; 
   }
 
   .intro .images {
-    flex-direction: column; /* Coloque as imagens em coluna */
-    align-items: center; /* Centralize as imagens */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .intro img {
-    width: 100%; /* Para que a imagem ocupe toda a largura */
-    max-width: 300px; /* Defina um tamanho máximo */
-    margin: 20px 0; /* Espaçamento entre as imagens */
+    width: 100%;
+    max-width: 300px; 
+    margin: 20px 0; 
   }
 }
 
@@ -290,7 +290,7 @@ html {
 @media (max-width: 480px) {
   .header, .footer {
     width: 100%;
-    padding: 10px; /* Ajuste a altura se necessário */
+    padding: 10px; 
   }
 
   .hero h1 {

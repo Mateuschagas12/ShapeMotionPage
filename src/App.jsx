@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Intro></Intro>
       <About />
-      <Hero videoUrl={"https://www.youtube.com/watch?v=SEMiqcUdYrQ"} />
+      <Hero videoUrl={"https://www.youtube.com/watch?v=WZmkbPxgDFQ"} />
       <Team />
       <Footer />
     </>
